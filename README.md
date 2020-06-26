@@ -1,33 +1,30 @@
-NodeJS and browser RSA / AES encryption Examples
+NodeJS et javascript RSA  crypto
 ================================================
 
 Description
 ------------
-It's example of exchanging encrypted  messages between server and client using simple
-Nodejs express framework and websocket library socket.io infrastructure for best visualisation.
-Client encryption side is written with browser javascript Web CryptoApi.
-Server side is written with Nodejs crypto and Nodejs node-rsa
 
-[READ DETAILED INFO IN ARTICLE](https://medium.com/@weblab_tech/encrypted-client-server-communication-protection-of-privacy-and-integrity-with-aes-and-rsa-in-c7b180fe614e#.6pvs68jnn)
+C'est un exemple d'échange de messages cryptés entre le serveur et le client à l'aide de  Nodejs express et l'infrastructure socket.io de la bibliothèque Websocket pour une meilleure visualisation.
+Le côté de chiffrement du client est écrit avec le navigateur javascript Web CryptoApi.
+Côté serveur est écrit avec Nodejs crypto et Nodejs node-rsa
 
-Requirements
+
+
+Exigences
 ------------
-nodejs 6 and >
+Docker
+nodejs version 6 et plus
+navigateur web
 
-Run with docker
-------------------
-docker-compose up
-
-Generate keys
----------------
+Lancer l'applicaiton avec docker apres avoir construire l'image Docker
 ~~~~~~~~~~~~~~~~~~
-node generate
+docker-composeup
 ~~~~~~~~~~~~~~~~~~
-Then overwrite textarea key values in static/index.html
 
-Run
+
+Execution
 ---
 ~~~~~~~~~~~~~~~~~~
 node start
 ~~~~~~~~~~~~~~~~~~
-starting web server with websockets on 3000 port
+l'application va etre lancer dans localhost:3000
